@@ -153,21 +153,7 @@ textarea{
     
    
 }
-.pdf{
-    width: 135px;
-    padding: 10px;
-    height: 35px;
-    text-align: center;
-    margin: 1px auto;
-    font-size: 12px;
-    font-weight: 500;
-    background-color: royalblue;
-    color: #fff;
-    border: none;
-    outline: none;
-    
 
-}
 .resume-container{
     /*display: none;*/
     width: 530px;
@@ -331,25 +317,3 @@ textarea{
 
 
 
-@media print {
-    @media print {
-        body {
-          font-size: 38pt; /* Increase font size for PDF */
-          margin: 0; /* Remove margin if needed */
-        }
-        
-        h1 {
-          font-size: 48pt; /* Increase header font size for PDF */
-        }
-        
-        p {
-          font-size: 36pt; /* Adjust paragraph font size */
-        }
-        
-        /* You can also change colors, spacing, etc. for print */
-      }
-    /* Adjust styles for print, like removing unnecessary elements */
-    .another, .pdf {
-        display: none; /* Hide buttons in PDF */
-    }
-}

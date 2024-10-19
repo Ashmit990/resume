@@ -199,32 +199,8 @@ generateAnother.addEventListener("click", function () {
 });
 
 
-let downloadPDF = document.createElement("button");
-downloadPDF.innerText = "Download as PDF";
-downloadPDF.classList.add("pdf");
-downloadPDF.style.display="block";
-resumeContainer.appendChild(downloadPDF);
 
 
 
 
-downloadPDF.addEventListener("click", function () {
-    // Temporarily hide buttons before generating PDF
-    generateAnother.style.display = "none";
-    downloadPDF.style.display = "none";
 
-    const options = {
-        margin: [0.8, 0, 0, 0],
-        filename: `${fullName.value}_Resume.pdf`,  // Ensure you get the actual name value
-        image: { type: 'png', quality: 0.98 },
-        html2canvas: { scale: 3 },
-        jsPDF: { unit: 'in', format: [10.5, 13], orientation: 'portrait' }
-    };
-
-    // Generate the PDF
-    html2pdf().from(resumeContainer).set(options).save().then(() => {
-        // After saving the PDF, show the buttons again
-        generateAnother.style.display = "block";
-        downloadPDF.style.display = "block";
-    });
-});

@@ -144,8 +144,8 @@ let generateAnother = document.createElement("button");
 generateAnother.innerText = "Generate Another Resume";
 generateAnother.classList.add("another");
 generateAnother.style.display = "block";
+document.querySelector(".generete").appendChild(generateAnother);
 
-resumeContainer.appendChild(generateAnother);
 
 generateAnother.addEventListener("click", function () {
     

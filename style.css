@@ -16,11 +16,11 @@ body {
     background-color: #061739;
 }
 .input-container{
-    width: 470px;
+    width: 385px;
     background-color: #0E083B;
     padding: 20px;
     margin-top: 22px;
-    margin-left: 50px;
+    margin-left: 1px;
     box-shadow: 0 3px 9px rgba(244, 244, 244, 0.3), 
                 0 -3px 9px rgba(244, 244, 244, 0.3),
                 3px 0 9px rgba(244, 244, 244, 0.3), 
@@ -151,7 +151,7 @@ textarea{
     cursor: pointer;
     position: fixed;
     top: 88.5%;
-    left: 64.5%;
+    left: 42.5%;
     transition: transform 0.2s, background 0.3s;
     
     
@@ -183,7 +183,7 @@ textarea{
                 border: 2px solid white;
                 border-radius: 5px;
                 position: fixed;
-                right: 8%;
+                right: 33%;
                 top: 30px;
                 
 }
